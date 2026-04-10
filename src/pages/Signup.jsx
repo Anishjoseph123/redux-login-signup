@@ -75,7 +75,9 @@ export default function Signup() {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-300">
       <div className="bg-white p-6 rounded-[10px] shadow-xl w-100">
-        <h2 className="text-xl text-center mb-4 font-bold">Create Your Free Account</h2>
+        <h2 className="text-xl text-center mb-4 font-bold">
+          Create Your Free Account
+        </h2>
 
         <input
           className="w-full mb-3 p-2 border rounded"
@@ -130,13 +132,13 @@ export default function Signup() {
         )}
         <button
           onClick={handleSignup}
-          className="uppercase cursor-pointer w-full bg-blue-700 text-white p-2 rounded-xl"
+          className="uppercase cursor-pointer w-full bg-blue-700 text-white p-2 rounded-xl hover:bg-blue-500 hover:text-black"
         >
           Create Account
         </button>
         <p className="mt-3 text-sm font-semibold">
           Already have an account?
-          <Link to="/" className="text-blue-700 ml-1">
+          <Link to="/" className="text-blue-700 ml-1 hover:underline">
             Login
           </Link>
         </p>
