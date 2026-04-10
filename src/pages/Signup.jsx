@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { signup } from "../features/auth/authSlice";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export default function Signup() {
@@ -75,7 +75,7 @@ export default function Signup() {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-300">
       <div className="bg-white p-6 rounded-[10px] shadow-xl w-100">
-        <h2 className="text-xl mb-4 font-bold">Signup</h2>
+        <h2 className="text-xl text-center mb-4 font-bold">Create Your Free Account</h2>
 
         <input
           className="w-full mb-3 p-2 border rounded"
@@ -130,10 +130,16 @@ export default function Signup() {
         )}
         <button
           onClick={handleSignup}
-          className="cursor-pointer w-full bg-green-500 text-white p-2 rounded"
+          className="uppercase cursor-pointer w-full bg-blue-700 text-white p-2 rounded-xl"
         >
-          Signup
+          Create Account
         </button>
+        <p className="mt-3 text-sm font-semibold">
+          Already have an account?
+          <Link to="/" className="text-blue-700 ml-1">
+            Login
+          </Link>
+        </p>
       </div>
     </div>
   );

@@ -83,7 +83,7 @@ export default function Login() {
   return (
     <div className="flex h-screen items-center justify-center bg-gray-300">
       <div className="bg-white p-6 rounded-[10px] shadow-xl w-100">
-        <h2 className="text-xl mb-4 font-bold">Login</h2>
+        <h2 className="text-xl text-center mb-4 font-bold">Login and explore our services.</h2>
 
         {/* Email */}
         <input
@@ -140,14 +140,14 @@ export default function Login() {
         )}
         <button
           onClick={handleLogin}
-          className="cursor-pointer w-full bg-blue-500 text-white p-2 rounded mt-2"
+          className="uppercase cursor-pointer w-full bg-blue-700 text-white p-2 rounded-xl mt-2 hover:bg-blue-500 hover:text-black"
         >
           Login
         </button>
 
-        <p className="mt-3 text-sm">
-          No account?
-          <Link to="/signup" className="text-blue-500">
+        <p className="mt-3 text-sm font-semibold">
+          Create an account?
+          <Link to="/signup" className="text-blue-700 ml-1">
             Signup
           </Link>
         </p>
